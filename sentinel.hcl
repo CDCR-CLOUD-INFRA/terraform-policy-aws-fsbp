@@ -392,10 +392,10 @@ policy "s3-block-public-access-bucket-level" {
     enforcement_level = "advisory"
 }
 
-policy "s3-require-ssl" {
-  source = "./policies/s3/s3-require-ssl.sentinel"
-  enforcement_level = "advisory"
-}
+#policy "s3-require-ssl" {
+#  source = "./policies/s3/s3-require-ssl.sentinel"
+#  enforcement_level = "advisory"
+#}
 
 policy "s3-multi-region-access-points-should-have-block-public-access-settings-enabled" {
   source = "./policies/s3/s3-multi-region-access-points-should-have-block-public-access-settings-enabled.sentinel"
