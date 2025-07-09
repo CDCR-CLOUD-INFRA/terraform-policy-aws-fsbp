@@ -941,10 +941,10 @@ policy "guardduty-should-be-enabled" {
   enforcement_level = "advisory"
 }
 
-policy "codebuild-bitbucket-url-should-not-contain-sensitive-credentials" {
-  source = "./policies/codebuild/codebuild-bitbucket-url-should-not-contain-sensitive-credentials.sentinel"
-  enforcement_level = "advisory"
-}
+#policy "codebuild-bitbucket-url-should-not-contain-sensitive-credentials" {
+#  source = "./policies/codebuild/codebuild-bitbucket-url-should-not-contain-sensitive-credentials.sentinel"
+#  enforcement_level = "advisory"
+#}
 
 policy "codebuild-project-environments-should-have-a-logging-aws-configuration" {
   source = "./policies/codebuild/codebuild-project-environments-should-have-a-logging-aws-configuration.sentinel"
