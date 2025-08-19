@@ -6,7 +6,7 @@
 
 ## Description
 
-DISCLAIMER - This policy works when all resources of type aws_instance and aws_ami to be in the root module.
+DISCLAIMER - This policy works when all resources of type aws_instance and aws_ami to be in the root module and When Amazon Machine Images (AMIs) are created using image generation tools such as HashiCorp Packer, policies will fail, regardless of whether the underlying virtualization is paravirtualized.
 
 This control checks whether the virtualization type of an EC2 instance is paravirtual. The control fails if the virtualizationType of the EC2 instance is set to paravirtual.
 
