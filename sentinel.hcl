@@ -172,13 +172,13 @@ policy "elb-ensure-multi-az-configuration-classic-load-balancer" {
   enforcement_level = "advisory"
 }
 
-policy "elb-ensure-valid-desync-mitigation-mode-application-load-balancer" {
-  source = "./policies/elb/elb-ensure-valid-desync-mitigation-mode.sentinel"
-  enforcement_level = "advisory"
-  params = {
-    lb_type = "application"
-  }
-}
+#policy "elb-ensure-valid-desync-mitigation-mode-application-load-balancer" {
+#  source = "./policies/elb/elb-ensure-valid-desync-mitigation-mode.sentinel"
+#  enforcement_level = "advisory"
+#  params = {
+#    lb_type = "application"
+#  }
+#}
 
 policy "elb-ensure-valid-desync-mitigation-mode-classic-load-balancer" {
   source = "./policies/elb/elb-ensure-valid-desync-mitigation-mode.sentinel"
